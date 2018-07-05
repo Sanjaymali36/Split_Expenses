@@ -44,7 +44,7 @@ def calculate_expense(request):
     return render(request,Total.html",{'t':t})
 
 def split_expense(request):
-    members=request.GET["t4"]
+    members=request.GET["t6"]
     Each_Share=int(sum)/int(members)
     return render(request,"Individual.html",{'Individual_share_Amount':Individual_share_Amount})
 
